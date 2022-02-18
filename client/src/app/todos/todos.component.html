@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <h1 class="mb-3 display-2">List of Todos</h1>
+    <hr>
+    <table class="table table-hover table-bordered text-center">
+        <thead class="table-secondary">
+            <tr>
+                <th>#</th>
+                <th>Description</th>
+                <th>Target Completion Date</th>
+                <th>Is Completed?</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let todo of todos">
+                <td>{{todo.id}}</td>
+                <td>{{todo.description}}</td>
+                <td>{{todo.targetDate | date}}</td>
+                <td [class.table-success]="todo.isDone" [class.table-danger]="!todo.isDone">{{todo.isDone ? "True" :
+                    "False"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

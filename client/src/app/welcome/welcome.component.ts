@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.css']
+})
+export class WelcomeComponent implements OnInit {
+  name: string = "";
+
+  constructor(private aRoute: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.name = this.aRoute.snapshot.params['name']
+  }
+
+}

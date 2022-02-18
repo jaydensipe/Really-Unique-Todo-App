@@ -1,0 +1,26 @@
+<div class="container mt-5 text-center">
+
+    <h1 class="mb-3 display-2">Login</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" type="text" name="username" [(ngModel)]="username"
+                    placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" type="password" name="password" [(ngModel)]="password"
+                    placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+
+    <button (click)="login()" class="btn btn-success">Login</button>
+</div>
