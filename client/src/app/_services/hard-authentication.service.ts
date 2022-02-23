@@ -9,7 +9,7 @@ export class HardAuthenticationService {
   constructor(private router: Router) { }
 
   authenticate(username: string, password: string) {
-    if (username === "test" && password === "test") {
+    if (username !== "" && password !== "") {
       sessionStorage.setItem("user", username);
       return true;
     }

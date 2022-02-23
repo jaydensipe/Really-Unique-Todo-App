@@ -8,6 +8,7 @@
                 <th>Description</th>
                 <th>Target Completion Date</th>
                 <th>Is Completed?</th>
+                <th colspan="2">Actions</th>
             </tr>
         </thead>
 
@@ -18,7 +19,21 @@
                 <td>{{todo.targetDate | date}}</td>
                 <td [class.table-success]="todo.isDone" [class.table-danger]="!todo.isDone">{{todo.isDone ? "True" :
                     "False"}}</td>
+                <td><button class="btn btn-info" (click)="openUpdateModal(modalTemplateUpdate)">Update</button></td>
+                <td><button class="btn btn-danger" (click)="deleteTodo(todo.ownedUser, todo.id)">Remove</button></td>
+                <ng-template #modalTemplateUpdate>
+                    <app-update-modal [dataFromParent]="modalRef" [todo]="todo" (todoChange)="updateTodo($event)">
+                    </app-update-modal>
+                </ng-template>
+
+
             </tr>
         </tbody>
     </table>
+
+    <ng-template #modalTemplateCreate>
+        <app-create-modal [dataFromParent]="modalRef" (todoChange)="createTodo($event)">
+        </app-create-modal>
+    </ng-template>
+    <button class="btn btn-success" (click)="openCreateModal(modalTemplateCreate)">+</button>
 </div>
