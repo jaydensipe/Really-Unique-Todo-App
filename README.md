@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br/>
 <p align="center">
-    <img style="height: 70px" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/memo_1f4dd.png" alt="Logo">
+    <img style="height: 70px" src="https://images.emojiterra.com/twitter/v14.0/512px/1f4dd.png" alt="Logo">
   <p align="center">
      A web todo list application created with the help from a <a href="https://www.udemy.com/course/full-stack-application-development-with-spring-boot-and-angular/">Udemy course</a>, using Spring Boot and Angular.
     <br />
