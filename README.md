@@ -47,5 +47,5 @@ It utilizes Java Spring Boot for the backend and Angular for the frontend. It's 
 
 Website/Portfolio - [https://jaydensipe.github.io/](https://jaydensipe.github.io/)
 
-Project Link: [https://github.com/jaydensipe/ReallyUniqueTodoApp](https://github.com/jaydensipe/ReallyUniqueTodoApp)
+Project Link: [https://github.com/jaydensipe/Really-Unique-Todo-App](https://github.com/jaydensipe/Really-Unique-Todo-App)
 
